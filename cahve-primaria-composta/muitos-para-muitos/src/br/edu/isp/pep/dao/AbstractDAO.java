@@ -1,12 +1,11 @@
-
 package br.edu.isp.pep.dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class AbstractDAO <T>{
-    
+public class AbstractDAO<T> {
+
     private EntityManagerFactory emf;
 
     public AbstractDAO() {
@@ -18,7 +17,7 @@ public class AbstractDAO <T>{
     }
 
     public void inserir(T entity) {
-        
+
         EntityManager em = getEntityManager();
 
         em.getTransaction().begin();
@@ -27,9 +26,9 @@ public class AbstractDAO <T>{
 
         em.getTransaction().commit();
     }
-    
-        public void alterar(T entity) {
-        
+
+    public void alterar(T entity) {
+
         EntityManager em = getEntityManager();
 
         em.getTransaction().begin();
