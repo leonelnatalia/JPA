@@ -58,6 +58,11 @@ public class Produto implements Serializable {
     public void setPreco(BigDecimal preco) {
         this.preco = preco;
     }
+
+    @Override
+    public String toString() {
+        return "Produto{" + "id=" + id + ", descricao=" + descricao + ", quantidade=" + quantidade + ", preco=" + preco + '}';
+    }
     
     
     

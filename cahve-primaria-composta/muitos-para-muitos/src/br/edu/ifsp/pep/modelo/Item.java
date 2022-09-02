@@ -23,7 +23,8 @@ public class Item implements Serializable {
     @ManyToOne 
     @JoinColumn(name = "produto_id", nullable = false)
     private Produto produto;
-            
+     
+    
     @ManyToOne 
     @JoinColumn(name = "venda_id", nullable = false)
     private Venda venda;

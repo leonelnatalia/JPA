@@ -13,7 +13,6 @@ public class ProdutoDAO extends AbstractDAO<Produto>{
         
         return query.getResultList();
     }
-    
-    
+     
 
 }
